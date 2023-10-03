@@ -8,6 +8,7 @@ export const RecentRatings = () => {
     <Flex direction="column" gap="3">
       <S.RecentRatings>Avaliações mais recentes</S.RecentRatings>
       <BookRatingCard
+        rating={4}
         userAvatar="https://avatars.githubusercontent.com/u/62773200?v=4"
         userName="Filipe Pfluck"
         publishedOn="Hoje"
@@ -17,6 +18,7 @@ export const RecentRatings = () => {
         bookReview="Semper et sapien proin vitae nisi. Feugiat neque integer donec et aenean posuere amet ultrices. Cras fermentum id pulvinar varius leo a in. Amet libero pharetra nunc elementum fringilla velit ipsum. Sed vulputate massa velit nibh... ver mais"
       />
       <BookRatingCard
+        rating={3}
         userAvatar="https://avatars.githubusercontent.com/u/62773200?v=4"
         userName="Filipe Pfluck"
         publishedOn="Hoje"

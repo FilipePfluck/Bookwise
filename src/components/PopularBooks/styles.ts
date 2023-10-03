@@ -45,6 +45,7 @@ export const BookList = styled(
       display: 'flex',
       flexDir: 'column',
       gap: '3',
+      w: '80',
     },
   }),
 )

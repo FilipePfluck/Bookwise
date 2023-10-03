@@ -21,7 +21,7 @@ export const PopularBooks = () => {
           bookName="A revolução dos bichos"
           authorName="George Orwell"
           bookSrc="https://m.media-amazon.com/images/I/91BsZhxCRjL._AC_UF1000,1000_QL80_.jpg"
-          rating={4}
+          rating={3}
         />
       </S.BookList>
     </Flex>

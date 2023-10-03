@@ -14,6 +14,7 @@ type BookRatingCardProps = {
   bookName: string
   bookAuthor: string
   bookReview: string
+  rating: number
 }
 
 export const BookRatingCard = ({
@@ -24,6 +25,7 @@ export const BookRatingCard = ({
   bookAuthor,
   bookSrc,
   bookReview,
+  rating,
 }: BookRatingCardProps) => {
   return (
     <S.CardContainer>
@@ -35,7 +37,7 @@ export const BookRatingCard = ({
             <S.PublishedOn>{publishedOn}</S.PublishedOn>
           </Flex>
         </S.RatingAuthor>
-        <Rating disabled bookName={bookName} rate={4} />
+        <Rating disabled bookName={bookName} rate={rating} />
       </S.CardHeader>
 
       <S.CardBody>

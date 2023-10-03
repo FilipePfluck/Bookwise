@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import * as S from './styles'
-import { css } from '../../../styled-system/css'
 import { Flex } from '../../../styled-system/jsx'
 import { Rating } from '../Rating'
 
@@ -9,6 +8,7 @@ type PopularBookProps = {
   bookSrc: string
   authorName: string
   rating: number
+  size?: 'sm' | 'md'
 }
 
 export const PopularBook = ({
@@ -16,18 +16,20 @@ export const PopularBook = ({
   bookName,
   bookSrc,
   rating,
+  size,
 }: PopularBookProps) => {
   return (
-    <S.BookContainer>
+    // todo - implement keyboard listener
+    <S.BookContainer role="button">
       <Image
         src={bookSrc}
         alt={bookName}
-        width={64}
-        height={94}
-        className={css({ w: '16', rounded: 'sm' })}
+        width={108}
+        height={152}
+        className={S.imageStyles({ size })}
       />
       <Flex direction="column" gap="8">
-        <Flex direction="column">
+        <Flex direction="column" mb="auto">
           <S.BookName>{bookName}</S.BookName>
           <S.BookAuthor>{authorName}</S.BookAuthor>
         </Flex>

@@ -11,6 +11,7 @@ export const PageContent = styled(
       maxW: 'calc(100vw - 252px)',
       display: 'flex',
       flexDir: 'column',
+      gap: '12',
     },
   }),
 )
