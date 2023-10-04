@@ -112,6 +112,20 @@ export default defineConfig({
             800: { value: '#0E1116' },
           },
         },
+        animations: {
+          drawerSlideIn: { value: 'drawerSlideIn 0.3s ease-out' },
+          drawerSlideOut: { value: 'drawerSlideOut 0.3s ease-in' },
+        },
+      },
+      keyframes: {
+        drawerSlideIn: {
+          '0%': { transform: 'translateX(800px)' },
+          '100%': { transform: 'translateX(0px)' },
+        },
+        drawerSlideOut: {
+          '0%': { transform: 'translateX(0px)' },
+          '100%': { transform: 'translateX(800px)' },
+        },
       },
       textStyles,
     },
