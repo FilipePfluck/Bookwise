@@ -4,18 +4,22 @@ import { CaretRight } from 'phosphor-react'
 import { Flex } from '../../../styled-system/jsx'
 
 import * as S from './styles'
-import { PopularBook } from '../PopularBookCard'
+import { PopularBook } from '../cards/PopularBookCard'
+import { ListHeader } from '../ListHeader'
 
 export const PopularBooks = () => {
   return (
     <Flex direction="column" gap="4">
-      <S.ListHeading>
-        <S.ListName>Livros populares</S.ListName>
-        <S.SeeAll href="/explorar">
-          Ver todos
-          <CaretRight />
-        </S.SeeAll>
-      </S.ListHeading>
+      <ListHeader
+        name="Livros populares"
+        actionHref="/explorar"
+        actionLabel={
+          <Flex align="center" gap="2">
+            Ver todos
+            <CaretRight size={16} />
+          </Flex>
+        }
+      />
       <S.BookList>
         <PopularBook
           bookName="A revolução dos bichos"

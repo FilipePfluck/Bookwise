@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import * as S from './styles'
-import { Flex } from '../../../styled-system/jsx'
-import { Rating } from '../Rating'
+import { Flex } from '@/styled-system/jsx'
+import { Rating } from '../../Rating'
 import { Dialog } from '@ark-ui/react'
-import { BookDrawer } from '../BookDrawer'
+import { BookDrawer } from '../../BookDrawer'
 import { css } from '@/styled-system/css'
 
 type PopularBookProps = {

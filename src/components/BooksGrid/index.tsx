@@ -1,4 +1,4 @@
-import { PopularBook } from '../PopularBookCard'
+import { PopularBook } from '../cards/PopularBookCard'
 import * as S from './styles'
 
 export const BooksGrid = () => {

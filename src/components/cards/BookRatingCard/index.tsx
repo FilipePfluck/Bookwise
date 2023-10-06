@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import * as S from './styles'
-import { Flex } from '../../../styled-system/jsx'
-import { Avatar } from '../Avatar'
-import { css } from '../../../styled-system/css'
-import { Rating } from '../Rating'
-import { ReadMore } from '../ReadMore'
+import { Flex } from '../../../../styled-system/jsx'
+import { css } from '../../../../styled-system/css'
+import { Rating } from '../../Rating'
+import { ReadMore } from '../../ReadMore'
+import { User } from '@/components/User'
 
 type BookRatingCardProps = {
   userName: string
@@ -30,13 +30,11 @@ export const BookRatingCard = ({
   return (
     <S.CardContainer>
       <S.CardHeader>
-        <S.RatingAuthor>
-          <Avatar src={userAvatar} name={userName} />
-          <Flex direction="column">
-            <S.UserName>{userName}</S.UserName>
-            <S.PublishedOn>{publishedOn}</S.PublishedOn>
-          </Flex>
-        </S.RatingAuthor>
+        <User
+          publishedOn={publishedOn}
+          userAvatar={userAvatar}
+          userName={userName}
+        />
         <Rating disabled bookName={bookName} rate={rating} />
       </S.CardHeader>
 

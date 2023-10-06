@@ -133,17 +133,21 @@ export default defineConfig({
 
   globalCss: defineGlobalStyles({
     '::-webkit-scrollbar': {
-      width: '16px',
+      width: '24px',
     },
 
     '::-webkit-scrollbar-track': {
-      bg: 'gray.800',
+      bg: 'gray.700',
+      backgroundClip: 'padding-box',
+      border: '8px solid rgba(0,0,0,0)',
     },
 
     '::-webkit-scrollbar-thumb': {
-      bg: 'gray.700',
+      bg: 'gray.600',
       transition: '0.2s',
       rounded: 'full',
+      backgroundClip: 'padding-box',
+      border: '8px solid rgba(0,0,0,0)',
     },
   }),
 

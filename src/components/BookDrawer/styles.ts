@@ -8,7 +8,7 @@ export const Overlay = styled(
     base: {
       position: 'fixed',
       inset: '0px',
-      bg: 'rgba(0,0,0,0.4)',
+      bg: 'rgba(0,0,0,0.6)',
     },
   }),
 )
@@ -26,15 +26,18 @@ export const DrawerContent = styled(
     base: {
       display: 'flex',
       flexDir: 'column',
+      gap: '10',
       bg: 'gray.800',
       boxShadow: 'lg',
       position: 'fixed',
       top: '0',
       bottom: '0',
       right: '0',
-      w: '660px',
+      w: '700px',
       px: '12',
       py: '16',
+
+      overflowY: 'auto',
 
       '&[data-state="open"]': {
         animation: 'drawerSlideIn',
@@ -42,6 +45,18 @@ export const DrawerContent = styled(
       '&[data-state="closed"]': {
         animation: 'drawerSlideOut',
       },
+    },
+  }),
+)
+
+export const ListHeader = styled(
+  'div',
+  cva({
+    base: {
+      w: 'full',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
     },
   }),
 )

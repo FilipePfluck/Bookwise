@@ -2,7 +2,7 @@ import { Flex } from '@/styled-system/jsx'
 import * as S from './styles'
 import Image from 'next/image'
 import { css } from '@/styled-system/css'
-import { Rating } from '../Rating'
+import { Rating } from '../../Rating'
 import { BookOpen, BookmarkSimple } from 'phosphor-react'
 
 export type BookDrawerCardProps = {
@@ -25,7 +25,7 @@ export const BookDrawerCard = ({
       <Flex gap="8">
         <Image
           src={bookSrc}
-          className={css({ w: '171px', h: '242px' })}
+          className={css({ w: '171px', h: '242px', rounded: '10px' })}
           width={171}
           height={242}
           alt={bookName}
