@@ -27,7 +27,7 @@ export const Sidebar = () => {
           </li>
         </S.NavList>
       </nav>
-      <S.LoginButton>
+      <S.LoginButton href="/login">
         Fazer Login
         <SignIn size={24} color="var(--colors-green-100)" />
       </S.LoginButton>

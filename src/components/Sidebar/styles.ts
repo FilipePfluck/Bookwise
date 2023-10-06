@@ -74,7 +74,7 @@ export const NavItem = styled(
 )
 
 export const LoginButton = styled(
-  'button',
+  Link,
   cva({
     base: {
       p: '1',
