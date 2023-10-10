@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 
-import { Binoculars, ChartLineUp, SignIn } from 'phosphor-react'
+import { Binoculars, ChartLineUp, SignIn, User } from 'phosphor-react'
 import * as S from './styles'
 
 export const Sidebar = () => {
@@ -23,6 +23,12 @@ export const Sidebar = () => {
           <li>
             <S.NavItem href="/explorar" isSelected={pathname === '/explorar'}>
               <Binoculars size={24} /> Explorar
+            </S.NavItem>
+          </li>
+
+          <li>
+            <S.NavItem href="/perfil" isSelected={pathname === '/perfil'}>
+              <User size={24} /> Perfil
             </S.NavItem>
           </li>
         </S.NavList>
