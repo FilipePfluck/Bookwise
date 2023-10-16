@@ -15,3 +15,16 @@ export const PageContent = styled(
     },
   }),
 )
+
+export const Title = styled(
+  'h1',
+  cva({
+    base: {
+      textStyle: 'headingLg',
+      color: 'gray.100',
+      display: 'flex',
+      alignItems: 'center',
+      gap: '3',
+    },
+  }),
+)

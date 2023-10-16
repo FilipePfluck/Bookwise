@@ -11,6 +11,7 @@ export const CardContainer = styled(
       py: '5',
       rounded: 'md',
       w: 'full',
+      h: 'max-content',
     },
     variants: {
       highlight: {
@@ -21,6 +22,9 @@ export const CardContainer = styled(
           bg: 'gray.700',
         },
       },
+    },
+    defaultVariants: {
+      highlight: false,
     },
   }),
 )

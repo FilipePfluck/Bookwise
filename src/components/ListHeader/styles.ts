@@ -1,6 +1,5 @@
 import { cva } from '@/styled-system/css'
 import { styled } from '@/styled-system/jsx'
-import Link from 'next/link'
 
 export const ListHeader = styled(
   'div',
@@ -24,17 +23,15 @@ export const ListName = styled(
   }),
 )
 
-export const Action = styled(
-  Link,
-  cva({
-    base: {
-      px: '2',
-      py: '1',
-      display: 'flex',
-      alignItems: 'center',
-      gap: '2',
-      textStyle: 'buttonSm',
-      color: 'purple.100',
-    },
-  }),
-)
+export const actionStyles = cva({
+  base: {
+    px: '2',
+    py: '1',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '2',
+    textStyle: 'buttonSm',
+    color: 'purple.100',
+    cursor: 'pointer',
+  },
+})

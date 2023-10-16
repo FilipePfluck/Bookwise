@@ -18,7 +18,7 @@ export default function Explore() {
             <S.Title>
               <Binoculars size={32} color="var(--colors-green-100)" /> Explorar
             </S.Title>
-            <SearchBar />
+            <SearchBar placeholder="Buscar livro ou autor" />
           </Flex>
           <Tags />
         </Flex>

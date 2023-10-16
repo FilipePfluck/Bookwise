@@ -10,6 +10,7 @@ export const ProfileContainer = styled(
       flexDir: 'column',
       gap: '8',
       minW: '80',
+      borderLeft: '1px solid token(colors.gray.700)',
     },
   }),
 )
@@ -32,7 +33,7 @@ export const BottomSection = styled(
     base: {
       display: 'flex',
       flexDir: 'column',
-      alignItems: 'center',
+      alignItems: 'start',
       gap: '10',
       px: '14',
     },
@@ -46,6 +47,26 @@ export const ProfileEntry = styled(
       display: 'flex',
       alignItems: 'center',
       gap: '5',
+    },
+  }),
+)
+
+export const ProfileEntryValue = styled(
+  'p',
+  cva({
+    base: {
+      textStyle: 'headingXs',
+      color: 'gray.200',
+    },
+  }),
+)
+
+export const ProfileEntryLabel = styled(
+  'p',
+  cva({
+    base: {
+      textStyle: 'textSm',
+      color: 'gray.300',
     },
   }),
 )
