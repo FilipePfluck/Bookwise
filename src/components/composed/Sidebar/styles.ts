@@ -6,11 +6,6 @@ export const SidebarContainer = styled(
   'aside',
   cva({
     base: {
-      position: 'fixed',
-      top: '4',
-      bottom: '4',
-      left: '4',
-      w: '232px',
       rounded: 'lg',
       p: '12',
       display: 'flex',
@@ -18,6 +13,18 @@ export const SidebarContainer = styled(
       gap: '16',
       bgSize: 'cover',
       bgRepeat: 'no-repeat',
+
+      position: 'fixed',
+      top: '4',
+      left: '4',
+      right: '4',
+      lg: {
+        top: '4',
+        bottom: '4',
+        left: '4',
+        right: 'auto',
+        w: '232px',
+      },
     },
   }),
 )
@@ -88,6 +95,21 @@ export const LoginButton = styled(
       outline: 'none',
       _focusVisible: {
         outline: '2px solid token(colors.purple.100)',
+      },
+    },
+  }),
+)
+
+export const Nav = styled(
+  'nav',
+  cva({
+    base: {},
+    variants: {
+      navigation: {
+        mobile: {},
+        desktop: {
+          hideBelow: 'lg',
+        },
       },
     },
   }),
