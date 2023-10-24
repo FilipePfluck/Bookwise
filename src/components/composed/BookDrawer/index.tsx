@@ -1,9 +1,9 @@
 import { Dialog, Portal } from '@ark-ui/react'
 import * as S from './styles'
-import { BookDrawerCard, BookDrawerCardProps } from '../cards/BookDrawerCard'
-import { BookDrawerRatingCard } from '../cards/BookDrawerRatingCard'
+import { BookDrawerCard, BookDrawerCardProps } from '../../cards/BookDrawerCard'
+import { BookDrawerRatingCard } from '../../cards/BookDrawerRatingCard'
 import { Flex } from '@/styled-system/jsx'
-import { ListHeader } from '../ListHeader'
+import { ListHeader } from '../../lists/ListHeader'
 import { LoginModal } from '../LoginModal'
 
 type BookDrawerProps = {

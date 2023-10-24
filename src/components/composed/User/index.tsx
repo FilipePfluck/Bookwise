@@ -1,5 +1,5 @@
 import { Flex } from '@/styled-system/jsx'
-import { Avatar } from '../Avatar'
+import { Avatar } from '../../primitives/Avatar'
 import * as S from './styles'
 
 type UserProps = {

@@ -2,9 +2,9 @@ import Image from 'next/image'
 import * as S from './styles'
 import { Flex } from '../../../../styled-system/jsx'
 import { css } from '../../../../styled-system/css'
-import { Rating } from '../../Rating'
-import { ReadMore } from '../../ReadMore'
-import { User } from '@/components/User'
+import { Rating } from '../../primitives/Rating'
+import { ReadMore } from '../../primitives/ReadMore'
+import { User } from '@/components/composed/User'
 
 type BookRatingCardProps = {
   userName: string

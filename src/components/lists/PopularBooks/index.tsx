@@ -1,10 +1,10 @@
 'use client'
 
 import { CaretRight } from 'phosphor-react'
-import { Flex } from '../../../styled-system/jsx'
+import { Flex } from '@/styled-system/jsx'
 
 import * as S from './styles'
-import { PopularBook } from '../cards/PopularBookCard'
+import { PopularBook } from '../../cards/PopularBookCard'
 import { ListHeader } from '../ListHeader'
 
 export const PopularBooks = () => {

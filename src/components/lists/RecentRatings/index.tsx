@@ -1,5 +1,5 @@
-import { Flex } from '../../../styled-system/jsx'
-import { BookRatingCard } from '../cards/BookRatingCard'
+import { Flex } from '@/styled-system/jsx'
+import { BookRatingCard } from '../../cards/BookRatingCard'
 
 import * as S from './styles'
 

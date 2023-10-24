@@ -2,7 +2,7 @@ import { Flex } from '@/styled-system/jsx'
 import * as S from './styles'
 import Image from 'next/image'
 import { css } from '@/styled-system/css'
-import { Rating } from '../../Rating'
+import { Rating } from '../../primitives/Rating'
 import { BookOpen, BookmarkSimple } from 'phosphor-react'
 
 export type BookDrawerCardProps = {

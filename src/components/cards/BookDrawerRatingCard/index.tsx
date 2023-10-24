@@ -1,6 +1,6 @@
-import { User } from '@/components/User'
+import { User } from '@/components/composed/User'
 import * as S from './styles'
-import { Rating } from '@/components/Rating'
+import { Rating } from '@/components/primitives/Rating'
 
 type BookDrawerRatingCardProps = {
   publishedOn: string

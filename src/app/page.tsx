@@ -3,9 +3,9 @@
 import { Flex } from '../../styled-system/jsx'
 
 import { ChartLineUp } from 'phosphor-react'
-import { PopularBooks } from '@/components/PopularBooks'
-import { RecentRatings } from '@/components/RecentRatings'
-import { Sidebar } from '@/components/Sidebar'
+import { PopularBooks } from '@/components/lists/PopularBooks'
+import { RecentRatings } from '@/components/lists/RecentRatings'
+import { Sidebar } from '@/components/composed/Sidebar'
 
 import * as S from './styles'
 

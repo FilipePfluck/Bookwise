@@ -1,12 +1,12 @@
 'use client'
-import { Sidebar } from '@/components/Sidebar'
+import { Sidebar } from '@/components/composed/Sidebar'
 
 import * as S from './styles'
 import { Flex } from '@/styled-system/jsx'
 import { Binoculars } from 'phosphor-react'
-import { SearchBar } from '@/components/SearchBar'
-import { Tags } from '@/components/Tags'
-import { BooksGrid } from '@/components/BooksGrid'
+import { SearchBar } from '@/components/primitives/SearchBar'
+import { Tags } from '@/components/primitives/Tags'
+import { BooksGrid } from '@/components/lists/BooksGrid'
 
 export default function Explore() {
   return (

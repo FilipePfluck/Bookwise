@@ -1,12 +1,12 @@
 'use client'
 
-import { Sidebar } from '@/components/Sidebar'
+import { Sidebar } from '@/components/composed/Sidebar'
 import * as S from './styles'
 import { MyReviewBookCard } from '@/components/cards/MyReviewBookCard'
-import { Profile } from '@/components/Profile'
+import { Profile } from '@/components/composed/Profile'
 import { Flex } from '@/styled-system/jsx'
 import { User } from 'phosphor-react'
-import { SearchBar } from '@/components/SearchBar'
+import { SearchBar } from '@/components/primitives/SearchBar'
 
 export default function Perfil() {
   return (
